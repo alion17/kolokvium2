@@ -4,11 +4,12 @@
 
 int main(void)
 {
+    int l;
     string s = get_string("Введіть строку: ");
-    length = strlen(s);
+    l = strlen(s);
     printf("Результат: ");
-    for (int i = length; i > 0; i--)
+    for (int i = l; i >= 0; i--)
     {
-        printf("%d", s[i]);
+        printf("%c", s[i]);
     }
 }
